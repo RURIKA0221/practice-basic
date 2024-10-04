@@ -2,6 +2,7 @@
 
 package Exception;
 
+//java.パッケージ名.クラス名
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -19,6 +20,7 @@ public class Exception04 {
 			// catch文で例外処理されるので、処理が実行される
 			System.out.println("IOExceptionが発生");
 		}
+		//catch内でreturnがあったらそこで終わるからその時はfinallyがいる
 		System.out.println("プログラム終了");
 	}
 

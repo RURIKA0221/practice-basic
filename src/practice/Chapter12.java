@@ -36,12 +36,12 @@ public class Chapter12 {
 	// validIndexメソッドを作成
 	public static void validIndex(int[]array, int index) {
 	// ・indexがarrayのサイズの範囲内なら、インデックスの要素を出力
-		if(array.length >= index) {
-			System.out.println("インデックス"+index+"の要素は"+array[index]+"です");
+		if(array.length <= index) {
+			// ・サイズの範囲外なら、IllegalArgumentExceptionをスロー
+			throw new IllegalArgumentException(index + " はサイズの範囲外です");
 		}
-		// ・サイズの範囲外なら、IllegalArgumentExceptionをスロー
-		throw new IllegalArgumentException(index + " はサイズの範囲外です");
-	
+		
+		System.out.println("インデックス"+index+"の要素は"+array[index]+"です");
 }
 	public static void throwSQLException() throws SQLException {
 		// SQLExceptionは、通常、SQLでエラーの場合に発生する例外

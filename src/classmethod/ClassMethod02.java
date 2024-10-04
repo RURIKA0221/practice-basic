@@ -8,6 +8,7 @@ import classmethod.human.Human02;
 
 public class ClassMethod02 {
 	public static void main(String[] args) {
+	//	型(Human02型) 変数 = Human02のクラス(設計図)を実体化させる(引数…どのコンストラクタか指定する)
 		Human02 yamada = new Human02(); // Human02クラスのインスタンスを生成
 		System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。");
 
