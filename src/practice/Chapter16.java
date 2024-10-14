@@ -19,7 +19,9 @@ public class Chapter16 {
 			// Programmerクラスの場合、studyメソッドを呼ぶ
 			if(h instanceof Programmer){
 				//studyメソッドを呼ぶのはわかるけど((Programmer)h)の意味が分からない
-				((Programmer)h).study();
+				//((Programmer)h).study();
+				Programmer p = (Programmer)h;  // Programmer型にキャスト(型変換) 
+				p.study();  // Programmerクラスの studyメソッドを呼び出す
 			}
 		}		
 		
